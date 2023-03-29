@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <title>Обычный сайтик</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .container {
+            width: 100%;
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .block1 {
+            width: 1250px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            float: left;
+        }
+        
+        .text1 {
+            font-size: 14px;
+            ;
+            color: #001e28;
+            width: 160px;
+            float: left;
+            margin-left: 25px;
+            margin-top: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: regular;
+            padding-bottom: 50px;
+        }
+        
+        .text2 {
+            font-size: 14px;
+            margin: 12px 0px 0px 590px;
+            font-family: 'Roboto ', sans-serif;
+            color: #001e28;
+            float: left;
+        }
+        
+        .tel {
+            width: 140px;
+            color: #001e28;
+            font-family: 'Roboto Slab', serif;
+            font-weight: bold;
+            float: left;
+            margin: 0px 0px 0px 590px;
+        }
+        
+        .asfalt {
+            border: 1px solid #ffaf02;
+            background-color: #ffaf02;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 170px;
+            height: 50px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 17px;
+            margin-left: 20px;
+        }
+        
+        .buttontext {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        
+        .block2 {
+            background-image: url(images/header.jpg);
+            height: 685px;
+            margin-top: 40px;
+        }
+        
+        .content {
+            width: 600px;
+            margin-left: 332px;
+            padding-top: 50px;
+            height: 500px;
+        }
+        
+        .block2 h1 {
+            font-family: "Roboto Slab";
+            font-size: 57px;
+        }
+        
+        .block2 h2 {
+            font-family: "Roboto Slab";
+            font-size: 30px;
+            margin: 0;
+        }
+        
+        .block2 img {
+            margin-right: 25px;
+            float: left;
+        }
+        
+        ul li {
+            list-style: none;
+            margin-bottom: 35px;
+            height: 70px;
+            width: 700px;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-top: 80px;
+        }
+        
+        .block2 h3 {
+            margin: 0;
+        }
+        
+        .block2 p {
+            margin: 0;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        
+        .textblock2 {
+            font-size: 14px;
+            float: left;
+        }
+        
+        .block3 {
+            background-image: url(images/form.jpg);
+            height: 580px;
+        }
+        
+        .line {
+            width: 869px;
+            height: 20px;
+            margin: 65px auto;
+        }
+        
+        .block3 h3 {
+            font-size: 30px;
+            font-family: "Roboto Slab";
+            text-align: center;
+        }
+        
+        .block3 h4 {
+            font-family: "Roboto Slab";
+            text-align: center;
+            font-size: 22px;
+        }
+        
+        .b3p {
+            text-align: center;
+            font-weight: 100;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .input1 {
+            width: 210px;
+            height: 53px;
+            border-radius: 30px;
+            background: url(images/nameicon.png) no-repeat 33px;
+            background-color: white;
+            padding-left: 65px;
+            float: left;
+            margin-right: 30px;
+            border: 0;
+            border: 1px solid #d1d1d1
+        }
+        
+        .input2 {
+            width: 210px;
+            height: 53px;
+            border-radius: 30px;
+            background: url(images/phoneicon.png) no-repeat 33px;
+            background-color: white;
+            padding-left: 65px;
+            float: left;
+            border: 0;
+            border: 1px solid #d1d1d1
+        }
+        
+        .knopki3 {
+            width: 886px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        
+        .beton {
+            width: 232px;
+            height: 55px;
+            background-color: #ffaf02;
+            border-radius: 30px;
+            border: 0;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            margin-left: 30px;
+        }
+        
+        .b3cont {
+            width: 555px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        
+        .extra {
+            padding-top: 5px;
+            float: left;
+        }
+        
+        .b3cont img {
+            float: left;
+            margin-left: 25px;
+            margin-right: 10px;
+        }
+        
+        .b3text {
+            font-family: "Roboto Slab";
+            font-size: 20px;
+            margin-top: 18px;
+            float: left;
+        }
+        
+        .block3 p {
+            margin: 0;
+        }
+        
+        .block4 {
+            background-color: #fdfde0;
+            width: 100%;
+            padding-top: 100px;
+        }
+        
+        .block4 h2 {
+            text-align: center;
+            font-family: "Roboto Slab";
+            font-size: 30px;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        
+        .hh {
+            text-align: center;
+            font-size: 22px;
+            line-height: 1.5;
+            width: 639px;
+            margin: 0 auto;
+        }
+        
+        .block4 span {
+            background-color: #ffaf02;
+            color: white;
+            padding: 4px 10px;
+        }
+        
+        .foto img {
+            height: 200px;
+            width: 270px;
+            float: left;
+            display: inline-block;
+            margin: 0 auto;
+            border: 7px solid #fdfde0;
+        }
+        
+        .foto {
+            width: 1136px;
+            margin: 0 auto;
+            margin-top: 60px;
+            height: 220px;
+        }
+        
+        .offers {
+            margin-top: 90px;
+            width: 1110px;
+            ;
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .offer1 img,
+        p {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .offer1 img {
+            margin-right: 30px;
+        }
+        
+        .offer1 p {
+            width: 254px;
+            font-size: 20px;
+            color: #001e28;
+            line-height: 1.25;
+            margin: 0;
+        }
+        
+        .offer1 {
+            width: 360px;
+            display: inline-block;
+            margin-right: 70px;
+            margin: 0 auto;
+        }
+        
+        .forma {
+            width: 1110px;
+            height: 346px;
+            background: url(images/form_women.jpg) no-repeat bottom right;
+            background-color: white;
+            margin: 0 auto;
+            border: 10px solid #d8f0f0;
+            text-align: center;
+        }
+        
+        .vnut img {
+            margin-top: 10px;
+        }
+        
+        .asfalt:hover {
+            background-color: #e6a008;
+            border-color: #e6a008;
+            -webkit-box-shadow: 4px 4px 47px 4px rgba(230, 160, 8, 0.35) #f1a603;
+            -moz-box-shadow: 4px 4px 47px 4px rgba (230, 160, 8, 0.35);
+            box-shadow: 4px 4px 47px 4px rgba(230, 160, 8, 0.35);
+            transition: 1s;
+        }
+        
+        .beton:hover {
+            background-color: #f1a603;
+            border-color: #f1a603;
+            -webkit-box-shadow: 4px 4px 47px 4px rgba(241, 166, 3, 0.35) #f1a603;
+            -moz-box-shadow: 4px 4px 47px 4px rgba(241, 166, 3, 0.35);
+            box-shadow: 4px 4px 47px 4px rgba(241, 166, 3, 0.35);
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block1">
+            <div class="logo">
+                <a href="#"><img src="images/LOGO.jpg" width="70px" height="70px"></a>
+            </div>
+            <div class="text1">Лучшие детские курорты и маршруты</div>
+            <div class="text2">Есть вопросы? - звоните</div>
+            <div class="tel">+7 (9999) 88-77-66 +7 (999) 888-77-66</div>
+            <input type="button" class="asfalt" value="обратный звонок">
+        </div>
+        <div class="block2">
+            <div class="content">
+                <h1>Детский отдых</h1>
+                <h2>Путевки в лучшие лагеря</h2>
+                <h2>по ценам ниже рынка на 20%</h2>
+                <ul>
+                    <li><img src="images/1.png">
+                        <div class="textblock2">
+                            <h3>Мы сотрудничаем только с лицензированными лагерями,</h3>
+                            <h3>прошедшими проверку контролиоующими органами</h3>
+                            <p>Наши дети в безопасности</p>
+                        </div>
+                    </li>
+                    <li><img src="images/2.png">
+                        <div class="textblock2">
+                            <h3>Путевки оплачиваются из бюджета</h3>
+                            <p>Вся информация и документы в офисе</p>
+                        </div>
+                    </li>
+                    <li><img src="images/3.png">
+                        <div class="textblock2">
+                            <h3>Профессиональные вожатые и педагоги</h3>
+                            <h3>с опытом работы в лагерях от 3 до 30 лет</h3>
+                            <p>Во время отдыха педагоги всегда на связи</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block3">
+            <h3>Мы готовы дать Вам подробную консультацию</h3>
+            <h4>Поможем правильно подобрать путевку для Вашего ребенка под любой бюджет!</h4>
+            <div class="line"><img src="images/line.png"></div>
+            <p class="b3p">Для этого заполните форму ниже мы перезвоним Вам за 60 секунд</p>
+            <div class="knopki3">
+                <input class="input1" type="text" placeholder="Ваше имя">
+                <input class="input2" type="text" placeholder="Ваш телефон">
+                <button class="beton">Получить консультацию</button>
+            </div>
+            <div class="b3cont">
+                <p class="extra">или перезвоните нам по телефону:</p>
+                <img src="images/phone_icon.png">
+                <p class="b3text">+7 (9999)88-77-66</p>
+            </div>
+        </div>
+        <div class="block4 clearfix">
+            <h2>Специальное предложение - успевайте забронировать!</h2>
+            <h3 class="hh">Путевка в детский оздоровительный лагерь "Лазуревый берег" на 18 дней всего <span> за 25 800 рублей!</span></h3>
+            <div class="foto">
+                <img src="images/a.jpg">
+                <img src="images/b.jpg">
+                <img src="images/c.jpg">
+                <img src="images/d.jpg">
+            </div>
+            <div class="offers">
+                <div class="offer1">
+                    <img src="images/water.png">
+                    <p>Первая береговая линия - 50 метров до моря</p>
+                </div>
+                <div class="offer1">
+                    <img src="images/bed.png">
+                    <p>Размещение: все номера трехместные</p>
+                </div>
+                <div class="offer1">
+                    <img src="images/window.png">
+                    <p>В номере все удобства, есть лоджии</p>
+                </div>
+            </div>
+            <div class="forma">
+                <div class="vnut">
+                    <h3>Получите полную информацию о путевке от наших специалистов</h3>
+                    <p>Для этого заполните форму ниже - мы перезвоним Вам за 60 секунд</p>
+                    <div class="knopki3">
+                        <input class="input1" type="text" placeholder="Ваше имя">
+                        <input class="input2" type="text" placeholder="Ваш телефон">
+                        <button class="beton">Получить консультацию</button>
+                    </div>
+                    <div class="b3cont">
+                        <p class="extra">или перезвоните нам по телефону:</p>
+                        <img src="images/phone_icon.png">
+                        <p class="b3text">+7 (9999)88-77-66</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
